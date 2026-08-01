@@ -6,16 +6,16 @@
 #    By: edi-maio <edi-maio@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/03/17 17:10:17 by edi-maio          #+#    #+#              #
-#    Updated: 2026/06/24 19:40:56 by edi-maio         ###   ########.fr        #
+#    Updated: 2026/06/24 19:52:22 by edi-maio         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = RPN
+NAME = PmergeMe
 
 CFLAGS = -Wall -Wextra -Werror -std=c++98
 
 SRCS = main.cpp \
-		RPN.cpp
+		PmergeMe.cpp
 
 OBJS = $(SRCS:.cpp=.o)
 

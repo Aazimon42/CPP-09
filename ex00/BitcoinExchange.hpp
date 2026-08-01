@@ -6,7 +6,7 @@
 /*   By: edi-maio <edi-maio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/21 21:52:41 by edi-maio          #+#    #+#             */
-/*   Updated: 2026/06/22 01:47:03 by edi-maio         ###   ########.fr       */
+/*   Updated: 2026/06/24 19:34:52 by edi-maio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,6 @@ class BitcoinExchange
                 BitcoinException(const std::string &msg) : _msg(msg) {}
                 virtual ~BitcoinException() throw() {}
                 virtual const char* what() const throw() { return _msg.c_str(); }
-
             private:
                 std::string _msg;
         };

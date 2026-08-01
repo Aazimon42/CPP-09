@@ -5,28 +5,15 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: edi-maio <edi-maio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/06/22 02:07:04 by edi-maio          #+#    #+#             */
-/*   Updated: 2026/06/24 19:43:08 by edi-maio         ###   ########.fr       */
+/*   Created: 2026/06/24 19:50:54 by edi-maio          #+#    #+#             */
+/*   Updated: 2026/08/01 18:41:04 by edi-maio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "RPN.hpp"
+#include "PmergeMe.hpp"
 
 int main(int ac, char **av)
 {
-    if (ac != 2)
-    {
-        std::cerr << "Error: program should take an inverted Polish mathematical expression as an argument" << std::endl;
-        return (1);
-    }
-    try
-    {
-        RPN myRPN;
-        int n = myRPN.process(av[1]);
-        std::cout << n <<std::endl;
-    }
-    catch (RPN::RPNException &e)
-    {
-        std::cerr << e.what() << std::endl;
-    }
+    PmergeMe pmerge;
+    return pmerge.run(ac, av);
 }
