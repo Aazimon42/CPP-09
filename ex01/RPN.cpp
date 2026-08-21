@@ -6,7 +6,7 @@
 /*   By: edi-maio <edi-maio@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/22 02:06:18 by edi-maio          #+#    #+#             */
-/*   Updated: 2026/06/24 19:47:19 by edi-maio         ###   ########.fr       */
+/*   Updated: 2026/08/21 14:39:05 by edi-maio         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ int RPN::process(std::string input)
             }
             else if (input[i] == '*')
             {
-                if (n2 * n1 > INT_MAX)
+                if (n2 * n1 > INT_MAX || n2 * n1 < INT_MIN)
                     throw RPN::RPNException("Error");
                 myStack.push(n2 * n1);
             }
